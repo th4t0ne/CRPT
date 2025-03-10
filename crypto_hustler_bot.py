@@ -609,6 +609,8 @@ def user_info():
 #  MAIN
 # ======================
 
+import os
+
 if __name__ == "__main__":
-    # For production, run via WSGI (gunicorn, etc.). For local dev, you can do:
-    app.run(debug=True, port=5000)
+    port = int(os.environ.get("PORT", 5000))  # Pobieramy port z Render, domyślnie 5000
+    app.run(host="0.0.0.0", port=port)
