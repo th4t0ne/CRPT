@@ -1,2 +1,5 @@
-requests
 Flask
+flask-cors
+bcrypt
+requests
+gunicorn
