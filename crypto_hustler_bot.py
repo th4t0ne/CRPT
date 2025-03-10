@@ -611,6 +611,8 @@ def user_info():
 
 import os
 
+import os
+
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # Pobieramy port z Render, domyślnie 5000
+    port = int(os.environ.get("PORT", 5000))  # Pobieramy port z Render
     app.run(host="0.0.0.0", port=port)
